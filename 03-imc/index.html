@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IMC</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/input-text.css" />
+        <link rel="stylesheet" href="./css/button.css" />
+        <link rel="stylesheet" href="./css/input-range.css" />
+        <script src="./js/index.js" defer type="module"></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="title">Calculadora - IMC</div>
+                <form id="formulario">
+                    <div class="input">
+                        <label>Nome:</label>
+                        <!-- required para verificar se os campos estão preenchidos e step para definirmos os valores aceitos, nesse caso any
+                            para dizermos que aceita valores decimais. -->
+                        <input type="text" id="nome" required />
+                    </div>
+                    <div class="range">
+                        <label>Altura:</label>
+                        <span id="valorAltura" data-unidade="m">0</span>
+                        <input type="range" min="0" max="3" step="0.01" id="altura"/>
+                    </div>
+                    <div class="range">
+                        <label>Peso:</label>
+                        <span id="valorPeso" data-unidade="kg">0</span>
+                        <input type="range" min="0" max="500" step="0.1" id="peso"/>
+                    </div>
+                </form>
+                <button id="calcular" class="button template">Calcular</button>
+                <div class="result" id="resultado"></div>
+            </div>
+        </main>
+    </body>
+</html>
