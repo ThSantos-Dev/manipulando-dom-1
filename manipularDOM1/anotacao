@@ -1,0 +1,5 @@
+1 Criar o elemento HTML
+2 Configurar o elemento HTML
+3 Inserir o elemento HTML no DOM
+    appendChildren(cria um novo elemento no final do pai)
+    insertBefore (cria um novo elemento, com a possibilidade e escolher a posição)
